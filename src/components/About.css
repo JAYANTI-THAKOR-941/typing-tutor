@@ -1,0 +1,68 @@
+/* About.css */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.about-page {
+  font-family: 'Share Tech Mono', monospace;
+  background: linear-gradient(to bottom, #000000ee, #001100);
+  color: #00ff00;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #00ff00;
+  line-height: 1.8;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-page h1,
+.about-page h2 {
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
+  margin-bottom: 1rem;
+}
+
+.about-page h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 0.5rem;
+}
+
+.about-page h2 {
+  margin-top: 2rem;
+}
+
+.about-page p {
+  margin: 1rem 0;
+}
+
+.about-page ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.about-page ul li::before {
+  content: '🟢';
+  margin-right: 0.5rem;
+  color: #00ff00;
+}
+
+.about-page a {
+  color: #00ff00;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.about-page a:hover {
+  color: #33ff33;
+  text-shadow: 0 0 8px #00ff00;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

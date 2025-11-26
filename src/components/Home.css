@@ -1,0 +1,138 @@
+/* Home.css */
+.home-container {
+  position: relative;
+  padding: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #000;
+  color: #0f0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://media.giphy.com/media/L3nWlem0Hedt7gFMSZ/giphy.gif');
+  background-size: cover;
+  opacity: 0.07;
+  z-index: -1;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.main-icon {
+  font-size: 5rem;
+  color: #00ffcc;
+  text-shadow: 0 0 15px #00ffcc;
+  animation: glow 2s infinite alternate;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin: 1rem 0;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.start-btn {
+  margin-top: 1.5rem;
+  padding: 0.9rem 2.5rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 2px solid #0f0;
+  color: #0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #0f0;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
+
+.start-btn:hover {
+  background-color: #0f0;
+  color: #000;
+  box-shadow: 0 0 20px #0f0, 0 0 40px #0f0;
+}
+
+.features,
+.levels-preview {
+  margin-top: 3rem;
+}
+
+.features h2,
+.levels-preview h2 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.features ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.features li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.level {
+  border: 2px solid #0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px #0f0;
+  text-align: center;
+}
+
+.level h3 {
+  color: #0ff;
+  margin-bottom: 0.5rem;
+}
+
+.quote-section {
+  margin-top: 3rem;
+  text-align: center;
+  border-top: 1px dashed #0f0;
+  padding-top: 2rem;
+}
+
+.quote-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0ff;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-shadow: 0 0 5px #0ff;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ffcc;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+  }
+}

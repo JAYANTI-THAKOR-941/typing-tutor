@@ -1,0 +1,63 @@
+/* ExerciseList.css */
+.exercise-list {
+  padding: 2rem;
+  background-color: #0c0c0c;
+  color: #00ffea;
+  font-family: 'Fira Code', monospace;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.exercise-list h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 10px #00ffee, 0 0 20px #00ffee;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.exercise-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #00ffee88;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px #00ffeecc, 0 0 20px #00ffee77 inset;
+}
+
+.card-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  filter: brightness(0.9) contrast(1.1);
+}
+
+.card-content {
+  padding: 1rem;
+  text-align: left;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #00ffee;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 0.5rem;
+}

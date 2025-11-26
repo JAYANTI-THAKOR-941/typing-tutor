@@ -1,0 +1,129 @@
+/* TypingBox.css */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.typing-box {
+  font-family: 'Share Tech Mono', monospace;
+  background-size: cover;
+  color: #00ff00;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #00ff00;
+  max-width: 1200px;
+  margin: 2rem auto;
+  position: relative;
+  z-index: 1;
+}
+
+.typing-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: #00000088;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: #00ff00;
+  box-shadow: 0 0 10px #00ff0055;
+  white-space: pre-wrap;
+}
+
+.correct {
+  color: #00ff00;
+}
+
+.incorrect {
+  color: #ff4444;
+  background-color: #330000;
+}
+
+textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 2px solid #00ff00;
+  background-color: #000;
+  color: #00ff00;
+  border-radius: 6px;
+  resize: none;
+  box-shadow: 0 0 10px #00ff00aa;
+  margin-bottom: 1rem;
+}
+
+textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.live-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  background-color: #001100;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #00ff00aa;
+}
+
+.live-stats p {
+  flex: 1;
+  margin: 0;
+}
+
+.results {
+  background-color: #001100;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00ff00;
+  color: #00ff00;
+}
+
+.results h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.result-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.result-buttons button {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  background-color: #00ff00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px #00ff00aa;
+}
+
+.result-buttons button:hover {
+  background-color: #33ff33;
+  box-shadow: 0 0 20px #00ff00cc;
+}
+
+
+textarea::placeholder {
+  color: #00ff0077;
+  font-family: 'Share Tech Mono', monospace;
+  animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% { opacity: 0; }
+}
